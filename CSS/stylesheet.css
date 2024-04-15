@@ -115,7 +115,7 @@ nav img {
 /* Header Text */
 .HeroText {
   position: absolute;
-  top: 80%; /* Position the text vertically centered */
+  top: 50%; /* Position the text vertically centered */
   left: 50%; /* Position the text horizontally centered */
   transform: translate(-50%, -50%); /* Center the text using transform */
   text-align: center; /* Center align the text */
