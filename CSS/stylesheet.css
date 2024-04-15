@@ -1,71 +1,96 @@
-/*Robert Schmidt*/ 
-/*The goal on turn in was to have most if not all of my index page be done, 
-while also having a general layout that I can apply to the rest of the 
-website.*/
+/* Robert Schmidt */
+/* The goal on turn in was to have most if not all of my index page be done,
+   while also having a general layout that I can apply to the rest of the
+   website. */
 
-  /*Global Styles*/
-/*Setting base zoom level for website*/
-html {zoom: 100%;}
+/* Global Styles */
 
-p, li {font-size: 24px;}
+/* Setting base zoom level for website */
+html {
+  zoom: 100%;
+}
 
-h2 {font-size: 40px;}
+/* Set font size for paragraphs and list items */
+p, li {
+  font-size: 24px;
+}
 
-h3 {font-size: 32px;}
+/* Set font size for h2 */
+h2 {
+  font-size: 40px;
+}
 
+/* Set font size for h3 */
+h3 {
+  font-size: 32px;
+}
 
+/* Font family for entire website */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
 
-/*Setting max width for images so I can have a easier time see the website
-while coding*/
+/* Navigation */
 
-/*Font family for entire website*/
-body { font-family: Arial, Helvetica, sans-serif ;}
-
-  /* Navigation */
-/*Positions the navigation bar*/
-nav {position: relative;
+/* Positions the navigation bar */
+nav {
+  position: relative;
   background-color: white;
-  overflow: hidden;}
+  overflow: hidden;
+}
 
-/*Aligns the navigation list horizontally*/
-nav a {float: left;}
+/* Aligns the navigation list horizontally */
+nav a {
+  float: left;
+}
 
-nav ul li {float: left;}
-/*This removes all of the default styling for the navigation list*/
-nav ul {list-style: none;
+nav ul li {
+  float: left;
+}
+
+/* This removes all of the default styling for the navigation list */
+nav ul {
+  list-style: none;
   margin-left: 200px;
-  padding: 0;}
+  padding: 0;
+}
 
-/*Stylization for all of the navigation links*/
-nav li a {color: black; /*Changes Color to black*/
-/*Removes the underline from the links*/
+/* Stylization for all of the navigation links */
+nav li a {
+  color: black; /* Changes Color to black */
+  /* Removes the underline from the links */
   text-decoration: none;
   padding: 14px 16px;
-/*Makes Nav links block elements for hover elements later*/
+  /* Makes Nav links block elements for hover elements later */
   display: block;
-/*Font Stylization for the links*/
+  /* Font Stylization for the links */
   font-weight: bold;
   font-size: 20px;
-/*Spaces out the links*/
-  margin-left: 20px;}
+  /* Spaces out the links */
+  margin-left: 20px;
+}
 
-/*Stylization for links while hovered*/
-nav li a:hover {background-color: black;
-  color: white;}
+/* Stylization for links while hovered */
+nav li a:hover {
+  background-color: black;
+  color: white;
+}
 
-/*Styling for fake company logo*/
-nav div img {position: relative; /*Positions logo relative to nav container*/
-/*Makes sure image dosent get clipped by hero banner*/
+/* Styling for fake company logo */
+nav img {
+  position: relative; /* Positions logo relative to nav container */
+  /* Makes sure image doesn't get clipped by hero banner */
   z-index: 300000;
   padding: 5px 10px;
   margin: 0;
   object-fit: cover;
   width: 169px;
-  height: 190px;}
-  
-  /* Hero Banner */
+  height: 190px;
+}
 
-/*Only going to comment on this one as they are all essentially the same*/
+/* Hero Banner */
+
+/* Hero section */
 #Hero {
   position: absolute;
   top: -100px;
@@ -77,6 +102,7 @@ nav div img {position: relative; /*Positions logo relative to nav container*/
   height: 100px;
 }
 
+/* Banner image */
 .Banner {
   position: relative;
   top: 0;
@@ -89,7 +115,7 @@ nav div img {position: relative; /*Positions logo relative to nav container*/
 /* Header Text */
 .HeroText {
   position: absolute;
-  top: 50%; /* Position the text vertically centered */
+  top: 80%; /* Position the text vertically centered */
   left: 50%; /* Position the text horizontally centered */
   transform: translate(-50%, -50%); /* Center the text using transform */
   text-align: center; /* Center align the text */
@@ -107,7 +133,8 @@ nav div img {position: relative; /*Positions logo relative to nav container*/
 /* Navigation */
 nav {
   position: relative; /* Add position relative to position the navigation bar */
-  z-index: 3;}
+  z-index: 3;
+}
 
 /* Call to Action */
 .Call2Action {
@@ -130,7 +157,7 @@ nav {
   cursor: pointer;
 }
 
-   /*Sectioning Format*/
+/* Sectioning Format */
 .DK {
   display: flex;
   position: relative; /* Change position to relative */
@@ -145,13 +172,15 @@ nav {
   align-items: flex-start; /* Align items vertically */
 }
 
-.DKTITLE h2, .DKTITLE p {margin: 0;}
+.DKTITLE h2, .DKTITLE p {
+  margin: 0;
+}
 
 .DKTITLE img {
   height: 200px;
   width: 200px;
   margin-right: 20px;
-  margin-left: 20px /* Add margin to separate image from text */
+  margin-left: 20px; /* Add margin to separate image from text */
 }
 
 .DKTITLE h2 {
@@ -170,9 +199,11 @@ nav {
   margin-left: 40px;
 }
 
-.DKWRIT h3 {font-style: italic;
+.DKWRIT h3 {
+  font-style: italic;
   text-decoration: underline;
-  margin-bottom: 0;}
+  margin-bottom: 0;
+}
 
 .DKWRIT p { 
   margin-bottom: 20px;
@@ -180,7 +211,7 @@ nav {
 }
 
 
-/*gallery*/
+/* Gallery */
 .gallery {
   display: grid;
   grid-template-columns: repeat(2, 1fr); 
@@ -191,8 +222,11 @@ section {
   padding: 20px;
 }
 
-section img {width: 480px;
-  height: 400px;}
+section img {
+  width: 480px;
+  height: 400px;
+}
+
 section img {
   max-width: 100%;
 }
@@ -208,30 +242,29 @@ section h5 {
   width: 480px;
   margin-top: -10px;
   text-align: center;
-  
 }
 
-  /*Forms*/
+/* Forms */
 /* Apply different background color to form text boxes */
 main section input[type="text"],
 main section input[type="email"],
 main section textarea {
-    background-color: lightgray; /* Change the color to your desired color */
-    color: black; /* Set text color */
-    border: 1px solid black; /* Add border for better visibility */
-    padding: 8px; /* Add padding for spacing */
-    margin-bottom: 10px; /* Add margin bottom for spacing between form elements */
+  background-color: lightgray; /* Change the color to your desired color */
+  color: black; /* Set text color */
+  border: 1px solid black; /* Add border for better visibility */
+  padding: 8px; /* Add padding for spacing */
+  margin-bottom: 10px; /* Add margin bottom for spacing between form elements */
 }
 
-  /*Footer*/
+/* Footer */
 
-/*Sets up footer size and color*/
+/* Sets up footer size and color */
 footer {
   background: #012641;
   padding: 10px;
 }
 
-/*Sets up images for footer*/
+/* Sets up images for footer */
 .footerLogo {
   display: flex; 
   justify-content: center;
@@ -239,13 +272,13 @@ footer {
   align-items: center;
 }
 
-/*Image sizing*/
+/* Image sizing */
 .footerLogo img {
   width: 50px;
   height: 50px;
 }
 
-/*Footer Text Styling*/
+/* Footer Text Styling */
 .footerTxt {
   color: white;
   text-align: center;
@@ -253,8 +286,3 @@ footer {
   font-size: 18px;
   font-weight: bold;
 }
-
-  
-
- 
-  
