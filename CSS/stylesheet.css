@@ -33,7 +33,7 @@ nav a {float: left;}
 nav ul li {float: left;}
 /*This removes all of the default styling for the navigation list*/
 nav ul {list-style: none;
-  margin: 0;
+  margin-left: 200px;
   padding: 0;}
 
 /*Stylization for all of the navigation links*/
@@ -54,9 +54,9 @@ nav li a:hover {background-color: black;
   color: white;}
 
 /*Styling for fake company logo*/
-nav img {position: relative; /*Positions logo relative to nav container*/
+nav div img {position: relative; /*Positions logo relative to nav container*/
 /*Makes sure image dosent get clipped by hero banner*/
-  z-index: 2;
+  z-index: 300000;
   padding: 5px 10px;
   margin: 0;
   object-fit: cover;
@@ -191,7 +191,7 @@ section {
   padding: 20px;
 }
 
-section img {max-width: 100%;
+section img {width: 480px;
   height: 400px;}
 section img {
   max-width: 100%;
@@ -205,6 +205,10 @@ section h5 {
   position: absolute;
   color: white;
   background-color: #012641;
+  width: 480px;
+  margin-top: -10px;
+  text-align: center;
+  
 }
 
   /*Forms*/
